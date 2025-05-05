@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const rcwidgetcss = document.createElement('link');
+        rcwidgetcss.rel = 'stylesheet';
+        rcwidgetcss.href = 'https://webchatdev.raisecall.com/rcwidget/raise-call-widget.css';
+        document.head.prepend(rcwidgetcss);
+        const rcwidget = document.createElement('script');
+        rcwidget.src = 'https://webchatdev.raisecall.com/rcwidget/raise-call-widget.umd.js';
+        document.head.prepend(rcwidget);
+        rcwidget.onload = function () {
+          RaiseCallWidget({
+            webchatUUID: '58a3eaf0-e25f-4d0d-a1f6-d7594ba73c29',
+            orgUUID: 'fad0bcd5-c62a-44dc-882d-d2bdece598fb',
+          });
+        };
+      </script>
+</head>
+<body>
+    <div>
+        Maria naibaho test
+    </div>
+</body>
+</html>
